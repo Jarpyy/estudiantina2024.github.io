@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    height: 100%;
+}
+
+/* Galería de imágenes y el video */
+.gallery-column img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    object-fit: cover;
+    border: 2px soli
+}
+
+/* Ajustar el ancho de la columna central */
+.gallery-center {
+    flex: 2; /* Hace que la columna central sea más ancha */
+    padding: 0 10px;
+}
+
+.gallery-column .image1 {
+    width: 30vh;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+.gallery-column .image2 {
+    width: 37vh;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 225px;
+}
+
+.gallery-column .image3 {
+    width: 25vh;
+    height: 20vh;
+    position: absolute;
+    top: 188px;
+    left: 1px;
+}
+
+.gallery-column .image4 {
+    width: 21vh;
+    height: 30vh;
+    position: absolute;
+    top: 188px;
+    left: 188px;
+}
+
+.gallery-column .image5 {
+    width: 20.6vh;
+    height: 30vh;
+    position: absolute;
+    top: 188px;
+    left: 346px;
+}
+
+.gallery-column .image6 {
+    width: 25vh;
+    height: 30vh;
+    position: absolute;
+    top: 338px;
+    left: 1px;
+}
+
+.gallery-column .image7 {
+    width: 20vh;
+    height: 18vh;
+    position: absolute;
+    top: 639px;
+    left: 1px;
+}
+
+.gallery-column .image8 {
+    width: 42vh;
+    height: 30vh;
+    position: absolute;
+    top: 412px;
+    left: 188px;
+}
+
+.gallery-column .image9 {
+    width: 25vh;
+    height:10vh;
+    position: absolute;
+    top: 562px;
+    left: 1px;
+}
+
+.gallery-column .image10 {
+    width: 23vh;
+    height: 15vh;
+    position: absolute;
+    top: 639px;
+    left: 152px;
+}
+
+.gallery-column .image11 {
+    width: 23.5vh;
+    height: 20vh;
+    position: absolute;
+    top: 636px;
+    left: 324px;
+}
+
+.gallery-column .image13 {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+
+.gallery-column .image14 {
+    width: 21vh;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    right: 343px;
+}
+
+.gallery-column .image15 {
+    width: 26vh;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    right: 150px;
+}
+.gallery-column .image16 {
+    width: 27vh;
+    height: 25vh;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+}
+.gallery-column .image17 {
+    width: 27vh;
+    height: 15vh;
+    position: absolute;
+    top: 337px;
+    right: 1px;
+}
+
+.gallery-column .image20 {
+    width: 20.5vh;
+    height: 40vh;
+    position: absolute;
+    top: 502px;
+    right: 203px;
+}
+
+.gallery-column .image21 {
+    width: 19vh;
+    height: 40vh;
+    position: absolute;
+    top: 502px;
+    right: 358px;
+}
+
+.gallery-column .image22 {
+    width: 40vh;
+    height: 25vh;
+    position: absolute;
+    top: 150px;
+    right: 1px;
+}
+
+.gallery-column .image23 {
+    width: 27vh;
+    height: 50vh;
+    position: absolute;
+    top: 450px;
+    right: 1px;
+}
+
+.gallery-column .image24 {
+    width: 40vh;
+    height: 22vh;
+    position: absolute;
+    top: 337px;
+    right: 203px;
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-column {
+    flex: 1; /* Reduce el ancho de las columnas laterales */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.gallery-center {
+    flex: 1; /* Aumenta el ancho de la columna central */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    background-color: #a283eb;
+    width: 60%; 
+    height: 100vh;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.664);
+    border-left: 2px solid #4b4b87;
+    border-right: 2px solid #4b4b87;
+    z-index: 10;
+}
+.right {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Mantén la columna derecha en un nivel inferior */
+}
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #4b4b87;
+    width: 40%;
+    height: 15%;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.664); 
+}
+.featured-image iframe {
+    width: 32vw; 
+    height: 52vh;
+    margin: 7% auto; 
+    background-color: white;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #4b4b87;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.664);
+    display: block; 
+}
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+/* Footer tipo de letra y video */
+footer {
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-color: #4b4b87;
+    padding: 20px 0;
+    text-align: left;
+    width: 30%;
+    bottom: -9%;
+    color: white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.664);
+    z-index: 20; /* Asegura que el footer esté por encima de todo */
+}
+
+.footer-content .image {
+    display: flex;
+    justify-content: absolute;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 69px;
+}
+
+footer p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+    left: 185px;
+    top: -57px;
+}
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .gallery-center {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-column {
+        grid-template-columns: 1fr;
+    }
+}
